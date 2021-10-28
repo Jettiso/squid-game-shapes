@@ -9,7 +9,7 @@
     position: relative;
     width: 100%;
     height: 99.9vh;
-    background: #262626;
+    background: #fff;
 }
 
 .container ::before {
@@ -23,8 +23,10 @@
 }
 
 .container .card {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     flex-grow: 1;
     transition: 0.5s ease-in-out;
     overflow: hidden;
@@ -33,4 +35,22 @@
 .container .card:hover {
     flex-grow: 3;
     background: #1a1a1a;
+}
+
+.container .card ion-icon {
+    
+    font-size: 15vw;
+    transition: 0.5s ease-in-out;
+    color: #1a1a1a;
+
+}
+
+.container .card:hover ion-icon {
+    font-size: 25vw;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #ea4884)
+    drop-shadow(0 0 30px #ea4884)
+    drop-shadow(0 0 60px #ea4884)
+    drop-shadow(0 0 100px #ea4884)
+    drop-shadow(0 0 150px #ea4884);
 }
